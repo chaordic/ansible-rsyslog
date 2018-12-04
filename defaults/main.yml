@@ -12,6 +12,11 @@
 rsyslog__enabled: True
 
 
+# Enable install rsyslog through ubuntu ppa repository
+rsyslog__ppa_enabled: False
+rsyslog__ppa_repository: deb http://ppa.launchpad.net/adiscon/v8-stable/ubuntu trusty main
+rsyslog__ppa_keyserver: keyserver.ubuntu.com
+
 # .. envvar:: rsyslog__capabilities
 #
 # List of different capabilities to configure. See :ref:`rsyslog__capabilities`
