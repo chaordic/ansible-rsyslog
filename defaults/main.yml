@@ -16,6 +16,7 @@ rsyslog__enabled: True
 rsyslog__ppa_enabled: False
 rsyslog__ppa_repository: deb http://ppa.launchpad.net/adiscon/v8-stable/ubuntu trusty main
 rsyslog__ppa_keyserver: keyserver.ubuntu.com
+rsyslog__ppa_key: AB1C1EF6EDB5746803FE13E00F6DD8135234BF2B
 
 # .. envvar:: rsyslog__capabilities
 #

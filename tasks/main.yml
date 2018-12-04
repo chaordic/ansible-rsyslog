@@ -3,13 +3,13 @@
 - block:
   - name: Add PPA repository for rsyslog v8 stable
     apt_repository:
-      repo: "{{ rsyslog_ppa_repository }}"
+      repo: "{{ rsyslog__ppa_repository }}"
       state: present
 
   - name: Add an apt key by id from ubuntu keyserver
     apt_key:
-      keyserver: "{{ rsyslog_keyserver }}"
-      id: "{{ rsyslog_ppa_key }}"
+      keyserver: "{{ rsyslog__ppa_keyserver }}"
+      id: "{{ rsyslog__ppa_key }}"
   when: rsyslog__ppa_enabled|bool
 
 - name: Install required packages
